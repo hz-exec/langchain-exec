@@ -103,14 +103,17 @@ def text2sql(text):
 #     print(result)
 
 
-def main():
+def prepare_db():
     with open(os.getenv('JSON_DATA_PATH'), 'r') as f:
         json_text = f.read()
     json2sql(json_text)
 
+
+def main():
+    prepare_db()
+
     # enable debug
     set_debug(True)
-
     while True:
         text = input('Enter a text: (q to quit)')
         if text == 'q':
