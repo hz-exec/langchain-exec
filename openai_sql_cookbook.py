@@ -118,7 +118,7 @@ def main():
             "function": {
                 "name": "ask_database",
                 "description":
-                    "Use this function to answer user questions about music. Input should be a fully formed SQL query.",
+                    "Use this function to answer user questions. Input should be a fully formed SQL query.",
                 "parameters": {
                     "type": "object",
                     "properties": {
